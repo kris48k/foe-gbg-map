@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+.center {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.tile {
+  border: 1px solid black;
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+}
+
+.tile:hover {
+  cursor: pointer;
+}
+
+.A1 {
+  top: 0%;
+  left: 50%;
+  background-color: aqua;
+}
+
+.B1 {
+  top: 50%;
+  left: 50%;
+  background-color: #546456;
+}
+
+.C1 {
+  top: 50%;
+  left: 0%;
+  background-color: #AADF23;
+}
+
+.D1 {
+  top:  0%;
+  left: 0%;
+  background-color: #A12A23;
+}
+
+.A2S {
+  top: 0%;
+  left: 50%;
+  transform: rotate(0deg) skew(0deg);
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-top: 150px solid #123456;
+
+}
+
+.ring1 {
+  filter:opacity(0.3);
+}
+
+.ring2 {
+}
+
+.circle {
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.circle-1 {
+  width: 160px;
+  height: 160px;
+  top: calc( 50% - 80px);
+  left: calc( 50% - 80px);
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  top: calc( 50% - 150px);
+  left: calc( 50% - 150px);
+}
+
+.circle-3 {
+  width: 440px;
+  height: 440px;
+  top: calc( 50% - 220px);
+  left: calc( 50% - 220px);
+}
+
+.circle-4 {
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.path1:hover {
+  fill: green;
+}
+
+.tile-text {
+  font-size: 12px;
+}
+
+.camps-text {
+  font-size: 10px;
+}
