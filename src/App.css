@@ -46,58 +46,22 @@
 }
 
 .tile {
-  border: 1px solid black;
-  position: absolute;
-  overflow: hidden;
-  width: 50%;
-  height: 50%;
+
 }
 
 .tile:hover {
   cursor: pointer;
+  filter: contrast(200%);
 }
 
-.A1 {
-  top: 0%;
-  left: 50%;
-  background-color: aqua;
-}
-
-.B1 {
-  top: 50%;
-  left: 50%;
-  background-color: #546456;
-}
-
-.C1 {
-  top: 50%;
-  left: 0%;
-  background-color: #AADF23;
-}
-
-.D1 {
-  top:  0%;
-  left: 0%;
-  background-color: #A12A23;
-}
-
-.A2S {
-  top: 0%;
-  left: 50%;
-  transform: rotate(0deg) skew(0deg);
-  width: 0;
-  height: 0;
-  border-right: 150px solid transparent;
-  border-top: 150px solid #123456;
+.tile-text-container {
 
 }
 
-.ring1 {
-  filter:opacity(0.3);
+.tile-text-container text {
+  pointer-events: none; 
 }
 
-.ring2 {
-}
 
 .circle {
   overflow: hidden;
@@ -143,4 +107,12 @@
 
 .camps-text {
   font-size: 10px;
+}
+
+.tile-info {
+  width: 100px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
 }
